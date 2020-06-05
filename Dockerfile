@@ -1,7 +1,6 @@
 FROM debian:buster-slim AS builder
 
 ARG HELM_VERSION=v3.2.2
-ARG KUBECTL_VERSION=v1.18.3
 
 WORKDIR /tmp
 RUN apt-get update && apt-get install -y curl
